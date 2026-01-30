@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SD Primeframe</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+
+  <div class="logo">
+    PRIME<span>FRAME</span>
+  </div>
+
+  <nav class="nav">
+    <a href="#home" class="active">Home</a>
+    <a href="/ui/ux/aboutus.html">About</a>
+    <a href="/ui/ux/projects.html">Projects</a>
+    <a href="/ui/ux/contact.html">Contact</a>
+  </nav>
+
+</header>
+
+<!-- HERO -->
+<section id="home" class="section1 reveal">
+    
+
+  <h1>Hi, I'm Prime Frame</h1>
+  <h2>Graphic Designer & Video Editor</h2>
+
+  <p>
+    I design clean graphics and creative videos.
+    Passionate about learning new technologies.
+  </p>
+  <a href="/ui/ux/contact.html" class="hire-btn">
+  Book Me for Work 🚀
+</a>
+
+
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills-section reveal">
+
+  <div class="myskills">
+
+    <div class="skillhead">
+      <h1>My Skills</h1>
+    </div>
+
+    <figure class="skill-box reveal">
+      <img src="https://i.pinimg.com/736x/de/ae/c0/deaec084c9c16f16de93a0afab4a6d61.jpg">
+      <figcaption>DaVinci</figcaption>
+    </figure>
+
+    <figure class="skill-box reveal">
+      <img src="https://i.pinimg.com/736x/c5/8a/26/c58a26e3d3c03fa8fed2629804b9f234.jpg">
+      <figcaption>Photoshop</figcaption>
+    </figure>
+
+    <figure class="skill-box reveal">
+      <img src="https://i.pinimg.com/736x/aa/5d/af/aa5daf9725b2ce6245467f303df54593.jpg">
+      <figcaption>Premiere</figcaption>
+    </figure>
+
+    <figure class="skill-box reveal">
+      <img src="https://i.pinimg.com/1200x/a8/07/99/a8079928e6223bebcb55490de7e2f3d5.jpg">
+      <figcaption>After Effects</figcaption>
+    </figure>
+
+    <figure class="skill-box reveal">
+      <img src="https://i.pinimg.com/1200x/f3/05/18/f30518902519480bc79944c380236f00.jpg">
+      <figcaption>Figma</figcaption>
+    </figure>
+
+    <figure class="skill-box reveal">
+      <img src="https://i.pinimg.com/736x/6d/9f/28/6d9f28a142edc9ec27c61f5e48ae4d38.jpg">
+      <figcaption>Canva</figcaption>
+    </figure>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+  <div class="footer-bottom">
+    © 2026  Primeframe | All Rights Reserved
+  </div>
+
+</footer>
+
+
+<!-- SCROLL SCRIPT -->
+<script>
+
+function revealOnScroll() {
+
+  const reveals = document.querySelectorAll(".reveal");
+
+  for (let i = 0; i < reveals.length; i++) {
+
+    const windowHeight = window.innerHeight;
+    const elementTop = reveals[i].getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      reveals[i].classList.add("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", revealOnScroll);
+revealOnScroll();
+
+</script>
+
+</body>
+</html>
